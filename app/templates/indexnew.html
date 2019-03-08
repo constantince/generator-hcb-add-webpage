@@ -24,11 +24,8 @@
 			})(document, window);	
 		</script>
 	<%}%>
-	<%if(useZepto){%>
-		<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
-	<%}%>
-	<%if(wxApi){%>
-		<script src="http://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+	<%for(let i =0; i<=libraries.length - 1;  i++){%>
+	<script src="<%=libraries[i]%>" type="text/javascript"></script>
 	<%}%>
 </head>
 <body>
