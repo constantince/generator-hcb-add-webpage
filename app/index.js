@@ -24,6 +24,27 @@ module.exports = class extends Generator {
         name: 'title',
         message: 'Please input your page title',
         default: ''
+      },
+      //是否使用zepto
+      {
+        type: 'confirm',
+        name: 'useZepto',
+        message: 'Do you want use library zepto',
+        default: true
+      },
+      //是否使用微信API
+      {
+        type: 'confirm',
+        name: 'wxApi',
+        message: 'Does this page need wx Api',
+        default: false
+      },
+    //选择开发模式
+      {
+        type: 'confirm',
+        name: 'model',
+        message: 'You are developing in Phone?',
+        default: true
       }
     ];
 
