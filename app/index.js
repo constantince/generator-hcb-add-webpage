@@ -25,6 +25,13 @@ module.exports = class extends Generator {
         message: 'Please input your page title',
         default: ''
       },
+       //选择开发模式
+      {
+        type: 'confirm',
+        name: 'mobile',
+        message: 'Are you developing on Mobile platform?',
+        default: true
+      },
 	  //选择要使用的库工具
 	  {
 		  type: 'checkbox',
@@ -50,14 +57,7 @@ module.exports = class extends Generator {
         value: 'https://cdn.bootcss.com/lodash.js/4.17.12-pre/lodash.core.min.js',
         checked: false
       }
-    ]},
-    //选择开发模式
-      {
-        type: 'confirm',
-        name: 'model',
-        message: 'You are developing in Phone?',
-        default: true
-      }
+    ]}
     ];
 
     return this.prompt(prompts).then(props => {
