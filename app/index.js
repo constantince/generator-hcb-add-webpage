@@ -39,22 +39,17 @@ module.exports = class extends Generator {
       message: 'Selecting your library below that you want to including',
       choices:[{
         name: 'zepto.js(dom maniplate library)',
-        value: 'https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js',
+        value: 'http://app.hcbkeji.com/activity/HcbCdnScripts/zepto.js',
         checked: true
       },
       {
         name: 'wxapi.js(wx api)',
-        value: 'http://res2.wx.qq.com/open/js/jweixin-1.4.0.js',
+        value: 'http://app.hcbkeji.com/activity/HcbCdnScripts/wx.js',
         checked: false
       },
       {
         name: 'juicer.js(html engine)',
-        value: 'https://cdn.bootcss.com/juicer/0.6.15/juicer-min.js',
-        checked: false
-      },
-      {
-        name: 'lodash.js(function library)',
-        value: 'https://cdn.bootcss.com/lodash.js/4.17.12-pre/lodash.core.min.js',
+        value: 'http://app.hcbkeji.com/activity/HcbCdnScripts/juicer.js',
         checked: false
       }
     ]}
